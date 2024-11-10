@@ -1,0 +1,91 @@
+h1 {
+  text-align: center;
+  margin-top: 200px
+}
+
+@keyframes slideInLeft {
+  From {
+transform: translateX(-300px);
+
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.heading-1 {
+  animation-name: slideInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay; Os;
+  animation-iteration-count:2;
+  animation-fill-mode;
+}
+
+.heading-2 {
+  display: inline-block;
+  transition: transform 1.5s;
+}
+
+.heading-2:hover {
+  transform: rotate(360deg);
+}
+
+body {
+background-color: lightpink;
+color: #123456;
+text-align: center;
+}
+
+.heading-3 {
+  animation: blink 1s infinite;
+  font-size: 35px;
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+.heading-4 {
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+  font-size: 35px;
+}
+
+.heading-4:hover {
+  transform: scale(1.2);
+  display: inline-block;
+  font-size: 35px;
+}
+.heading-5 {
+  opacity: 0;
+  animation: fadeIn 8s forwards;
+  font-size: 35px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 9;
+  }
+}
+.heading-6 {
+  background: linear-gradient(90deg, red, blue, green, yellow);
+  background-size: 200%;
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: colorChange 3s linear infinite;
+  font-size: 35px;
+}
+
+@keyframes colorChange {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
